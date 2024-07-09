@@ -1,0 +1,362 @@
+:root {
+  --color-background: #0A192F;
+  --color-background-light: #112240;
+
+  --color-other: #C4C4C4;
+  --color-primary: #64FFDA;
+  --color-secondary: #CCD6F6;
+  --color-tertiary: #8892C0;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+html {
+  /*Default font size in browsers are 16px, so we set it to 10px to make it easier to calculate rem units.*/
+  /*16 * 0.62.5 = 10px*/
+  background-color: var(--color-background);
+  font-size: 62.5%;
+  margin: auto;
+  max-width: 1500px;
+}
+
+
+/*<editor-fold desc="Typography">*/
+/*Typorgraphy*/
+
+html {
+  /*Default font size in browsers are 16px, so we set it to 10px to make it easier to calculate rem units.*/
+  /*16 * 0.62.5 = 10px*/
+  font-size: 62.5%;
+}
+
+
+body {
+  color: white;
+  font-family: 'Fira Code', monospace;
+  font-size: 2rem;
+
+  /*1.5 times the current font size*/
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+
+h1 {
+  color: white;
+  font-size: 6rem;
+}
+
+h2 {
+  color: var(--color-secondary);
+  font-size: 3rem;
+}
+
+h3 {
+  color: var(--color-tertiary);
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* a h3 { */
+/*   color: inherit; */
+/* } */
+/**/
+
+p {
+  /*Because there is margin collapsing, we set paragraph margin to zero to let the headings decide the margins*/
+  margin-top: 0;
+}
+
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+}
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="Links">*/
+/*Links*/
+
+.links {
+  text-decoration: none;
+  /* No underline for anchor tags in other words for links */
+
+}
+
+.link-white {
+  color: white;
+}
+
+.link-grey {
+  color: grey;
+}
+
+.link-grey:hover {
+  color: white;
+  transition: color 0.3s;
+}
+
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="Lists">*/
+.list {
+  list-style: none;
+  /*There is a default padding for ul and ol elements in all browser, so we remove it*!*/
+  padding-left: 0;
+}
+
+.list-horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.list-tertiary {
+  color: var(--color-other);
+}
+
+.list__item-horizontal:not(:last-child)::after {
+  content: "|";
+  /* Replace with your desired character or content */
+  display: inline;
+  margin: 0 0.5rem;
+  /* Adjust spacing as needed */
+}
+
+.list__item-small {
+  font-size: 1.2rem;
+}
+
+.list__item-white {
+  color: white;
+}
+
+.numbered-list {
+  counter-reset: my-counter;
+  list-style-type: none;
+  /* Hide the default numbering */
+}
+
+.numbered-list li::before {
+  color: var(--color-primary);
+  content: "0" counter(my-counter) ". ";
+  /* Add a counter for each list item */
+  counter-increment: my-counter;
+  /* Increment the counter */
+  margin-right: -0.5rem;
+  /* Adjust spacing between number and content */
+}
+
+
+/*</editor-fold>*/
+
+
+/*<editor-fold desc="Icons">*/
+.icon {
+  height: 40px;
+  transform: rotate(0);
+  transition: transform 0.3s;
+  width: 40px;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
+
+/*</editor-fold>*/
+
+
+/*<editor-fold desc="Collapsible">*/
+.collapsible__content {
+  /* when no collapsible-extended */
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+
+.collapsible--expanded .icon {
+  fill: white;
+  transform: rotate(90deg);
+  transition: transform 0.3s;
+}
+
+.collapsible--expanded .collapsible__content {
+  /* when collapsible-extended */
+  max-height: 100vh;
+  opacity: 1;
+}
+
+/*</editor-fold>*/
+
+
+/*<editor-fold desc="Navbar">*/
+/*Navbar*/
+
+.nav {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 0;
+}
+
+.nav__title {
+  color: var(--color-primary);
+  font-size: 2.4rem;
+  margin: 2rem;
+}
+
+.nav__list {
+  margin: 2rem;
+
+}
+
+
+.nav__item {
+  margin: 0 2rem;
+}
+
+
+@media screen and (min-width: 768px) {
+  .nav {
+    border-bottom: 1px solid var(--color-primary);
+    flex-direction: row;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    max-height: 100vh;
+    opacity: 1;
+
+  }
+
+  .nav__title {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .nav__icon {
+    display: none;
+  }
+
+
+}
+
+/*</editor-fold>*/
+
+
+/*<editor-fold desc="Section">*/
+
+/*About*/
+.section__header {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.header-number {
+  color: var(--color-primary);
+}
+
+.header-line {
+  border: none;
+  border-top: 1px dashed var(--color-primary);
+  /* Adjust the color and width as needed */
+  flex: 1;
+  /* Is a shorthand for flex-grow:1, flex-shrink:1 and flex-basis:0% (sets default size before remaining space is distributed) combined. It's used to set the length of a flex item.*/
+  margin-left: 2rem;
+
+}
+
+/*</editor-fold>*/
+
+
+/*<editor-fold desc="Blog">*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+.card {
+  align-items: flex-start;
+  background-color: var(--color-background-light);
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+  padding: 2rem;
+}
+
+
+
+.card__tags {
+  align-self: flex-start;
+  margin-top: auto;
+  /*justify-content: flex-end; This doesn't push the tags to bottom because it sets the flex behaviour for the children of tags element and not the tags element itself.*/
+}
+
+
+.blog .card__icon {
+  display: none;
+}
+
+
+.card__subtitle {
+  color: var(--color-primary);
+}
+
+.card__subtext {
+  color: white;
+}
+
+
+
+.portfolio .card__icon {
+  display: none;
+}
+
+.portfolio__icon {
+  margin: 1rem;
+}
+
+
+.card__title {}
+
+
+
+/*</editor-fold>*/

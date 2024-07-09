@@ -1,0 +1,39 @@
+
+/*<editor-fold desc="Intro">*/
+/*Intro*/
+
+.intro {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3rem 0 10rem 0;
+
+}
+
+.intro__entry {
+  color: var(--color-primary);
+
+}
+
+.intro__name {
+  color: var(--color-secondary);
+  margin: 0 0 1rem 0;
+}
+
+
+.intro__occupation {
+  color: var(--color-tertiary);
+  margin: 0;
+  text-align: center;
+}
+
+.intro__desc {
+  color: white;
+  text-align: center;
+}
+
+/*</editor-fold>*/
+
+
+
