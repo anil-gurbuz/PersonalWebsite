@@ -1,0 +1,645 @@
+<html><head>
+    <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101278627);</script>
+    <script async src="//static.getclicky.com/js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Portfolio</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="8142397a-6855-4f71-baee-11d6f0c9d4b5" class="page sans"><header><h1 class="page-title">Portfolio</h1></header><div class="page-body"><p id="b129b1f6-f55e-4b20-a90a-bc3877cbb1ec" class="">
+</p><h3 id="3585cdbc-4a89-4857-975e-6869476cffc8" class="">Sales Forecasting                                                                                                                                                                                                      <a href="https://anilgurbuz.com/port/proj/M5/">Link to Project</a></h3><p id="2ae7afec-632d-43e8-a0fe-5870bd5ca606" class="">M5 - Walmart Sales Forecasting Challenge (Python)</p><p id="a9c4766a-f613-4c3b-a9e4-707a63b9e77b" class=""><strong>Purpose:</strong> Forecasting sales of 30000 items in 12 Walmart Stores for 28 days using last 6 years sales data together with calendar and product related information.</p><p id="9c3ed059-f48d-4b06-9b4c-bab2e5937e04" class=""><strong>Challenge:</strong> Intermittent demand to products was the main challenge with this dataset. Also, single product level sales were highly variable.</p><p id="522d8443-8336-4db5-9169-f279d3a4cc4a" class=""><strong>Key Strategies Applied:</strong> 200 Features are generated mainly statistics on sales data and interactions between sales and calendar. Also applied clustering based on intermittent demand related features to group the products and train in-group products together. Finally,  28*3 Gradient Boosting Machines are trained to forecast different horizons from 1 to 28. </p><p id="f602b694-0c54-4ab6-9736-8e32c5d71459" class="">
+</p><hr id="1b00d0bf-52a7-4dc5-9bb5-acfc3727ac9b"/><p id="334c0176-df80-4f20-ac39-fa49c295b3d8" class="">
+</p><h3 id="7e97a6d0-cfc5-4e97-937b-91ccd63a75d9" class="">Deep Learning for Sequential Data                                                                                                                                                                      <a href="https://anilgurbuz.com/port/proj/mRNA/">Link to Project</a></h3><p id="23c0c5a1-516d-41da-8d90-14e60a61f317" class="">Predicting m-RNA Folding Probabilities (PyTorch)</p><p id="c8552842-c176-48fe-8d15-a85768b0d057" class=""><strong>Purpose:</strong> Given  m-RNA molecule base pair sequences and properties of each base pair, predicting the folding probability of each base pair.</p><p id="e2593356-7fbb-4767-bb54-8a5f51d882b3" class=""><strong>Data:</strong> Sequential data as the order of m-RNA molecule is critical to understand the behavior of the molecule. Therefore, transformers and recurrent neural networks are useful.</p><p id="20554485-2235-4334-8a9f-23f1edb5fde5" class=""><strong>Model Architecture: </strong>Embedding + LSTM with 3 hidden layer + Linear output layer</p><p id="73035db0-4f71-4816-8362-90db2e0a25a3" class=""><strong>Key Properties:</strong> GPU training, Data augmentation, Weighted training by measurement errors, use of experiment tracking tools.</p><p id="21d1ebed-9ab2-4981-b4e5-aebc9403d6c6" class="">
+</p><hr id="da2f23fd-7654-4ae3-a52b-a954334ff011"/><p id="ae266809-5ed8-472f-85f1-9f3cd7a1f5ea" class="">
+</p><h3 id="d25c4e3a-9b4f-47dc-8f23-c158dbe62d1d" class="">Predictive Modeling                                                                                                                                                                                                  <a href="https://anilgurbuz.com/port/proj/Superconductors/">Link to Project </a></h3><p id="038f984a-baff-456e-9b85-288a797c1460" class="">Predicting the Critical Temperature of Superconductors. (R)                                 </p><ul id="75568e7c-c7d0-41c0-840b-2a4e119f1b8d" class="bulleted-list"><li><strong>Purpose:</strong> Understanding the affecting factors and predicting the critical temperature of superconductors.</li></ul><ul id="7283bc96-9682-4d93-8a95-1bdaf4e75838" class="bulleted-list"><li><strong>Data:</strong> 20 thousand rows and 81 columns of data representing the chemical properties of superconductors.</li></ul><ul id="e22334ec-9c7d-43e2-a566-7f1d9725697e" class="bulleted-list"><li><strong>Model Development:</strong> Regression models are developed using stepwise feature selection, L1&amp;L2 parameter shrinkages. Also, XGBoost hyper-parameter tuning with grid-search is performed and XGBoost model is trained and compared with regression models.</li></ul><ul id="57ffe0ed-5a33-404e-9bec-79ccf8880226" class="bulleted-list"><li><strong>Key Achievements:</strong><ul id="24162af1-0174-4495-9579-69e5d2e6f304" class="bulleted-list"><li>Achieved to predict the critical temperature with  9.7°C RMSE using XGBoost regression trees whereas the state-of-art model for this task achieves 9.5 °C RMSE.</li></ul></li></ul><p id="e563e36d-b129-450b-bdc2-b3a64385d94b" class="">
+</p><hr id="5eeff039-5760-40cc-bcb4-2d2a81da1c40"/><p id="268a9b65-0a62-4a7e-ad73-0851e7752834" class="">
+</p><h3 id="5307f79b-b1b3-467b-94af-1620a818ff8c" class=""><strong>Processing Data Stream</strong>                                                                                                                                                                                          <a href="https://github.com/anil-gurbuz/Streaming-Application">Link to Project </a></h3><p id="9de96d49-fd6f-4b7d-a6ef-2ba535d710c0" class="">Processing, Visualising and storing real-time fire data. (Apache Spark - Kafka - MongoDB)</p><ul id="9e356917-9cb2-4241-81c5-f2ed8f623816" class="bulleted-list"><li><strong>Data:</strong> Historic surface temperature data coming from different NASA satellites.</li></ul><ul id="57104049-54a3-4b74-84a9-885b9c5c3970" class="bulleted-list"><li><strong>Purpose:</strong> Create 3 data streams of temperature data, process, join and pipeline it to feed dynamic visualisation showing recent highest temperature values and static visualisation showing fire locations on a map.</li></ul><ul id="9a443e3f-d2f9-4be6-bd3b-93e1f2520a2c" class="bulleted-list"><li><strong>System Architecture:</strong> 3 Kafka event producers are created to simulate real-time data with variable broadcasting frequencies. This data is parallelly processed by Spark streaming application. Results are visualised and saved into MongoDB.</li></ul><p id="4b460935-c049-47ef-b02c-02d812b14e6e" class="">
+</p><hr id="1fc6f436-e2b2-4e4b-9ba8-f57f8ab74d11"/><p id="87e72115-41aa-4602-8239-f938eb96d5bc" class="">
+</p><h3 id="74f0fd7d-107a-4b0d-914e-be5a4f610420" class="">Interactive Data Visualisation                                                                                                                                                                               <a href="http://anilgurbuz.com/visualisation/">Link to Project </a></h3><p id="58604b99-5acc-409e-9396-de8f8b9805cf" class="">Comparison of Online Movie Platforms (D3, HTML 5, CSS)                                   </p><ul id="48247a64-12ba-487e-9b26-45efae9cc413" class="bulleted-list"><li><strong>Purpose:</strong> Create an interactive data visualization tool to compare for-profit (IMDb) and non-profit (TMDb) movie platfoms’ user ratings.</li></ul><ul id="4c14a522-bb6c-40f1-9f55-e028709b2013" class="bulleted-list"><li><strong>Data:</strong> 25 million rows of user ratings from both platforms. Also detailed information about each movie.</li></ul><ul id="a5137f4d-6cde-4e75-baa8-2adc2271ff50" class="bulleted-list"><li><strong>Tools:</strong> Implemented as a web application using d3.js, HTML 5 and CSS.</li></ul><ul id="5c852a78-bbbd-49c6-9fc1-386f7735c960" class="bulleted-list"><li><strong>Key Achievement:</strong> Used a movie metadata API to render 100K movie posters instantly with user interaction.</li></ul><p id="fc8e44da-9d4e-4ae5-ad67-eb0cd7d0f6d6" class="">
+</p><hr id="8a5e4b46-7ddd-48f5-ac0b-8d3d4ae38645"/><p id="29ccf179-961a-4231-82f6-45ff9a0612f5" class="">
+</p><h3 id="af59a20e-fe19-4725-b524-c7cb1d742038" class=""><strong>Business Insights &amp; Recommendation Report              </strong>                                                                                                                        <strong>         </strong><a href="https://github.com/anil-gurbuz/Student-Segmentation-/blob/master/Personalisation%20in%20Online%20Education.ipynb">Link to Analysis</a>   </h3><p id="9bede539-2d84-4df9-b5d1-fa1aed7485f5" class="">Student segmentation (Python)                                                                                                                                                                                                                                          <a href="https://github.com/anil-gurbuz/Customer-Segmentation-and-Business-Recommendations/blob/master/Business%20Recommendation%20%20Report.pdf">Link to Report</a></p><ul id="4c456511-53e4-4b18-87ee-3c035b0d1c0c" class="bulleted-list"><li><strong>Purpose:</strong> Derivation of actionable business recommendations for a British university using its online learning platform data.</li></ul><ul id="0ac781a9-ff90-47e8-a438-1d5a0a20f937" class="bulleted-list"><li><strong>Data:</strong> 1 million rows and 7 datasets of messy data including student demographics, use of online study materials and assessment marks.</li></ul><ul id="c5eeecee-cbac-4890-81db-59e2fc516b5d" class="bulleted-list"><li><strong>Preparation:</strong> Missing values are imputed, anomalies are fixed, and feature engineering is performed to turn raw data into student success predictors such as number of clicks on a certain web-page.</li></ul><ul id="1836975d-9f1a-4255-903b-df2faeb2e1ad" class="bulleted-list"><li><strong>Key Analysis Findings &amp; Recommendations:</strong><ul id="47790de7-91a5-46fc-8043-27bef7a31ed6" class="bulleted-list"><li>Segmented the students and identified that students in different segments are benefitting from different types of study resources.</li></ul><ul id="ad081885-0e26-4c52-b68a-4412a0524af3" class="bulleted-list"><li>Recommended to implement a personalised resource recommendation system for online students to strengthen university’s market presence in the online education landscape.</li></ul></li></ul><p id="066b9f18-8b6d-4326-a38b-7f0cd2778e47" class="">
+</p><hr id="c8884925-f6cf-470e-9442-05189d108cbc"/><hr id="c4a6a621-a83c-4939-9e7e-d8ba8098e81b"/><p id="77a659ba-ddaa-486b-9715-088621c03339" class="">
+</p><h2 id="b25b5c0b-912d-42f0-8b3c-04915bdb8a75" class="">Minor projects/Implementations/Assignments/Experiments</h2><h3 id="f3c64a2a-3af7-4730-bd71-30263520e2ea" class="">Implementation of Machine Learning Algorithms From Scratch</h3><ul id="7d0c22d5-4b78-4aaa-96ab-5d714dec4961" class="block-color-gray_background bulleted-list"><li>K-NN &amp; Error Analysis                                                                                                    <a href="https://anilgurbuz.com/port/imp/KNN/">Link to Project </a></li></ul><ul id="16a1c3eb-f54d-473b-9f3c-ac9be112e253" class="bulleted-list"><li>K-NN &amp; Bootstrap                                                                                                           <a href="https://anilgurbuz.com/port/imp/Bootstrap/">Link to Project</a></li></ul><ul id="77e9e228-d5ea-49e6-934a-5d8d5e26791c" class="block-color-gray_background bulleted-list"><li>Stochastic and Batch Gradient Descent                                                                      <a href="https://anilgurbuz.com/port/imp/Gradient_Descent/">Link to Project</a></li></ul><ul id="f5e438e0-33c8-4027-bc83-f0b3b78ae20f" class="bulleted-list"><li>Regularization &amp; Bias-Variance Analysis                                                                      <a href="https://anilgurbuz.com/port/imp/Regularisation/">Link to Project</a></li></ul><ul id="395a5fc2-e807-4be1-b8e5-3154c6e72744" class="block-color-gray_background bulleted-list"><li>Multi-class Perceptron                                                                                                   <a href="https://anilgurbuz.com/port/imp/Perceptron/">Link to Project</a></li></ul><ul id="c3110aa2-ab0e-4b73-8049-f106b8089b2c" class="bulleted-list"><li>Bayesian Classifier &amp; Logistic Regression                                                                   <a href="https://anilgurbuz.com/port/imp/Classifiers/">Link to Project</a></li></ul><ul id="6b355912-fa6b-488d-8518-89d7b883709a" class="block-color-gray_background bulleted-list"><li>EM Algorithm for Gaussian Mixture Models                                                                <a href="https://anilgurbuz.com/port/imp/EM_GMM/">Link to Project</a></li></ul><ul id="5a03a9c6-dcd4-414c-a07e-c5de414bdee6" class="bulleted-list"><li>Neural Network &amp; Perceptron                                                                                       <a href="https://anilgurbuz.com/port/imp/NN_Perceptron/">Link to Project</a></li></ul><ul id="3b33e882-a0a8-4641-a263-2ed2e987279b" class="block-color-gray_background bulleted-list"><li>Transformer: &quot;Attention is All You Need&quot;                                                                     <a href="https://anilgurbuz.com/port/imp/Transformer/">Link to Project</a></li></ul><p id="b810f9be-568a-4b13-b987-fdb4783e202f" class="">
+</p><p id="5c8cbce7-c4ce-4c0b-b147-0e1e75c1f2de" class="">
+</p></div></article></body></html>
