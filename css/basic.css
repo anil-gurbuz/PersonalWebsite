@@ -81,6 +81,17 @@ a:active {
   text-decoration: none;
 }
 
+/* Make "About Me" text links clearly look like links (without affecting navbar/cards/etc.) */
+.about__text a,
+.about__text a:hover,
+.about__text a:visited,
+.about__text a:active {
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 0.08em;
+}
+
 p {
   /*Because there is margin collapsing, we set paragraph margin to zero to let the headings decide the margins*/
   margin-top: 0;
