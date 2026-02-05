@@ -149,6 +149,7 @@ p {
   list-style: none;
   /*There is a default padding for ul and ol elements in all browser, so we remove it*!*/
   padding-left: 0;
+  margin: 0;
 }
 
 .list-horizontal {
@@ -340,9 +341,26 @@ p {
 
 
 .card__tags {
-  align-self: flex-start;
+  align-self: stretch;
+  width: 100%;
   margin-top: auto;
   /*justify-content: flex-end; This doesn't push the tags to bottom because it sets the flex behaviour for the children of tags element and not the tags element itself.*/
+}
+
+/* Blog card tags: keep them inside the card and wrap cleanly on small widths */
+.card__tags .list-horizontal {
+  flex-wrap: wrap;
+  column-gap: 0.8rem;
+  row-gap: 0.4rem;
+}
+
+.card__tags .list__item-horizontal:not(:last-child)::after {
+  content: none;
+}
+
+.card__tags .list__item-horizontal {
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 
 
